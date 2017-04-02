@@ -2,7 +2,6 @@
 <html>
 <title> Quizzical </title>
 
-
 <head>
 
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
@@ -13,30 +12,77 @@
 
 <body>
 
-
-<div id = container_1>
-	
-  <form id = "my-form">
-
-	<fieldset class = "line">
-		<label class = "question">
-			What is the capital of New York?
-		</label>
-		<select id = "user-ny">
-			<option value = "nyc"> New York City </option>
-			<option value = "albany"> Albany </option>
-			<option value = "roch"> Rochester </option>
-		</select>
-	</fieldset>
-
-	<fieldset class = "line">
-		<button id = "form-submit"> Submit </button>
-	</fieldset>
-
-</form>
-  
-</div>
-	
-<div id = summary>
-	This is the summary.
+	<div id = "base">
 	</div>
+
+	<div class = "container" id = "container_1">
+		<form class = "form" id = "form_1">
+
+			<fieldset class = "q_line" id = "q_1">
+				<label class = "q_text" id = "q_text_1">
+					What is the capital of New York?
+				</label>
+				<select class = "options" id = "options_1">
+					<option value = "option_1.1"> New York City </option>
+					<option value = "option_1.2"> Albany </option>
+					<option value = "option_1.3"> Rochester </option>
+				</select>
+			</fieldset>
+
+			<fieldset class = "button_line" id = "b_1">
+				<button class = "button" id = "submit_1"> Submit </button>
+			</fieldset>
+
+		</form>
+	</div> <!-- closes container_1 -->
+
+	<div class = "container" id = "container_2">
+		<form class = "form" id = "form_2">
+
+			<fieldset class = "q_line" id = "q_2">
+				<label class = "q_text" id = "q_text_2">
+					What is the capital of California?
+				</label>
+				<select class = "options" id = "options_2">
+					<option value = "option_2.1"> Sacremento </option>
+					<option value = "option_2.2"> Los Angeles </option>
+					<option value = "option_2.3"> San José </option>
+				</select>
+			</fieldset>
+
+			<fieldset class = "button_line" id = "b_2">
+				<button class = "button" id = "prev_2"> Previous </button>
+				<button class = "button" id = "submit_2"> Submit </button>
+			</fieldset>
+
+		</form>
+	</div> <!-- closes container_2 -->
+
+	<div class = "container" id = "container_3">
+		<form class = "form" id = "form_3">
+
+			<fieldset class = "q_line" id = "q_3">
+				<label class = "q_text" id = "q_text_3">
+					What is the capital of Massachusetts?
+				</label>
+				<select class = "options" id = "options_3">
+					<option value = "option_3.1"> Springfield </option>
+					<option value = "option_3.2"> Worcester </option>
+					<option value = "option_3.3"> Boston </option>
+				</select>
+			</fieldset>
+
+			<fieldset class = "button_line" id = "b_3">
+				<button class = "button" id = "prev_3"> Previous </button>
+				<button class = "button" id = "submit_3"> Submit </button>
+			</fieldset>
+
+		</form>
+	</div> <!-- closes container_3 -->
+		
+	
+
+
+
+</body>
+</html>
