@@ -12,13 +12,21 @@ $(document).ready(function(){
 	$("#submit_1").click(function(e){
 		e.preventDefault();
 		$("#base").css("background", "#D8BFD8"); // makes second page purple
-		$("html, body").animate({scrollTop: 800}, 600);
+		$("html, body").animate({scrollTop: 800}, 600); // scrolls
+
+		submitted_1 = true; // makes sure all questions in quiz ae completed
+		console.log("Q1: Submitted");
 
 		var guess_val_1 = $("#options_1").val(); // record the user's guess
 		console.log("Q1: User guessed " +guess_val_1);
 
-		if(guess_val_1 == "option_1.2"){ guess_1 = true; }
-		submitted_1 = true;
+		if(guess_val_1 == "option_1.2"){ // to keep track of final grade
+			guess_1 = true;
+		}else{
+			guess_1 = false;
+		}
+
+		$("#grade").hide(); // in case of changing answers
 	});
 
 // PREVIOUS BUTTON ON 2ND PAGE
@@ -34,11 +42,19 @@ $(document).ready(function(){
 		$("#base").css("background", "#ADEAEA"); // makes third page blue
 		$("html, body").animate({scrollTop: 1600}, 600);
 
+		submitted_2 = true;
+		console.log("Q2: Submitted");
+
 		var guess_val_2 = $("#options_2").val();
 		console.log("Q2: User guessed " +guess_val_2);
 
-		if(guess_val_2 == "option_2.1"){ guess_2 = true; }
-		submitted_2 = true;
+		if(guess_val_2 == "option_2.1"){ 
+			guess_2 = true; 
+		}else{
+			guess_2 = false;
+		}
+
+		$("#grade").hide(); // in case of changing answers
 	});
 
 // PREVIOUS BUTTON ON 3RD PAGE
@@ -54,11 +70,19 @@ $(document).ready(function(){
 		$("#base").css("background", "#D0FAEE"); // makes fourth page green
 		$("html, body").animate({scrollTop: 2400}, 600);
 
+		submitted_3 = true;
+		console.log("Q3: Submitted");
+
 		var guess_val_3 = $("#options_3").val();
 		console.log("Q3: User guessed " +guess_val_3);
 
-		if(guess_val_3 == "option_3.3"){ guess_3 = true; }
-		submitted_3 = true;
+		if(guess_val_3 == "option_3.3"){ 
+			guess_3 = true; 
+		}else{
+			guess_3 = false;
+		}
+
+		$("#grade").hide(); // in case of changing answers
 	});
 
 // CLICK HERE
